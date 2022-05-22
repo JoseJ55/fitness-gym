@@ -37,6 +37,7 @@ body {
     align-items: center;
     list-style-type: none;
     color: var(--main-text-color);
+    font-family: var(--font-family);
 }
 
 #nav-items-about {
@@ -119,16 +120,11 @@ body {
 #about {
     width: 100%;
     height: 100vh;
-    /* overflow: hidden; */
-    /* overflow: -moz-hidden-unscrollable; */
     position: relative;
     background-image: url("./../assets/images/risen-wang-20jX9b35r_M-unsplash.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    /* display: flex;
-    justify-content: center;
-    align-items: center; */
 }
 
 #about-shapes {
@@ -186,4 +182,119 @@ body {
     width: 15%;
     /* height: 0; */
     border-bottom: 1px solid var(--main-text-color);
+}
+
+/* ------------------------------------------------------------------- */
+
+#products {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background-image: url("./../assets/images/ctrl-a-meal-replacement-03e4RajfFAE-unsplash.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#products-shapes {
+    width: 100%;
+    position: relative;
+    top: 0;
+    display: flex;
+}
+
+#products-shapes-left {
+    position: relative;
+    top: 0;
+    width: 65%;
+    height: 100vh;
+}
+
+#products-triangle-top-left {
+    width: 0;
+    height: 0;
+    border-top: 20vh solid rgba(0, 0, 0, 0.9);
+    border-right: 15em solid transparent;
+    border-bottom: 20vh solid transparent;
+    border-left: 15em solid rgba(0, 0, 0, 0.9);
+}
+
+#products-triangle-bottom-right-one {
+    width: 0;
+    height: 0;
+    align-self: flex-end;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    border-top: 20vh solid transparent;
+    border-right: 10em solid rgba(0, 0, 0, 0.9);
+    border-bottom: 20vh solid rgba(0, 0, 0, 0.9);
+    border-left: 10em solid transparent;
+}
+
+#products-shapes-right {
+    position: relative;
+    top: 0;
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+#products-shapes-right-area {
+    display: flex;
+}
+
+#products-triangle-bottom-right-two {
+    align-self: flex-start;
+    width: 0;
+    height: 0;
+    border-top: 30vh solid transparent;
+    border-right: 15em solid rgba(0, 0, 0, 0.9);
+    border-bottom: 30vh solid rgba(0, 0, 0, 0.9);
+    border-left: 15em solid transparent;
+}
+
+#products-vertical-rectangle {
+    flex: 1;
+    width: 2em;
+    height: 60vh;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+#products-rectangle {
+    width: 100%;
+    height: 20em;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+#products-info {
+    position: absolute;
+    bottom: 25%;
+    right: 10%;
+    width: 20%;
+}
+
+#products-info p {
+    color: var(--main-text-color);
+    font-size: 1.2rem;
+    font-family: var(--font-family);
+    margin: 3vh 0;
+}
+
+#products-info input {
+    background-color: var(--main-text-color);
+    font-size: 1rem;
+    font-family: var(--font-family);
+    padding: 1vh 1vw;
+    position: absolute;
+    right: 0;
+    border: 1px solid transparent;
+}
+
+#products-info input:hover {
+    background-color: black;
+    border: 1px solid var(--main-text-color);
+    color: var(--main-text-color);
+    cursor: pointer;
 }
