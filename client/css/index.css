@@ -1,0 +1,189 @@
+:root {
+    --main-text-color: yellow;
+    --font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: black;
+}
+
+#nav {
+    background-color: black;
+    width: 80%;
+    padding: 0 10%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    z-index: 100;
+}
+
+#nav-icon {
+    text-decoration: none;
+    color: var(--main-text-color);
+}
+
+#nav-items {
+    width: 40%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style-type: none;
+    color: var(--main-text-color);
+}
+
+#nav-items-about {
+    /* position: relative; */
+}
+
+.nav-items-about-title {
+    padding: 3vh 1vw;
+    cursor: pointer;
+    min-width: 10%;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-items-about-title:hover {
+    background-color: black;
+    color: var(--main-text-color);
+}
+
+#nav-items-about-title-items {
+    position: absolute;
+    display: none;
+    background-color: black;
+    padding: 1vh 1vw;
+    color: var(--main-text-color);
+    list-style-type: none;
+}
+
+#nav-items-about-title-items li {
+    padding: 2vh 4vw;
+}
+
+#nav-items-about-title-items li:hover {
+    background-color: var(--main-text-color);
+    color: black;
+    cursor: pointer;
+}
+
+#nav-items-about:hover #nav-items-about-title-items {
+    display: block;
+}
+
+#nav-items-about-title-items:hover #nav-items-about {
+    background-color: black;
+    color: var(--main-text-color);
+}
+
+/* ------------------------------------------------------------ */
+
+#main {
+    width: auto;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background-image: url("./../assets/images/daniel-apodaca-WdoQio6HPVA-unsplash.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.main-text {
+    color: var(--main-text-color);
+    font-size: 4rem;
+    font-family: var(--font-family);
+    margin: 0 0 0 10vw;
+}
+
+.main-small {
+    color: white;
+    font-size: 2rem;
+    font-family: var(--font-family);
+    margin: 0 0 0 10vw;
+}
+
+/* --------------------------------------------------------------------- */
+
+#about {
+    width: 100%;
+    height: 100vh;
+    /* overflow: hidden; */
+    /* overflow: -moz-hidden-unscrollable; */
+    position: relative;
+    background-image: url("./../assets/images/risen-wang-20jX9b35r_M-unsplash.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+}
+
+#about-shapes {
+    position: relative;
+    top: 0;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: inherit;
+}
+
+.squares {
+    flex: 1;
+    height: 50em;
+}
+
+.triangle-bottom-right {
+    background-color: transparent;
+    border-top: 25em solid transparent;
+    border-left: 25em solid transparent;
+    border-bottom: 25em solid rgba(0, 0, 0, 0.9);
+    border-right: 25em solid rgba(0, 0, 0, 0.9);
+    width: 0;
+    height: 0;
+}
+
+#about-shapes-box1 {
+    background-color: transparent;
+}
+
+#about-shapes-box2 {
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+#about-shapes-triangle {
+    /* background-color: black; */
+}
+
+#about-info {
+    width: 30%;
+    position: absolute;
+    top: 50%;
+    right: 10%;
+}
+
+#about-info p {
+    color: var(--main-text-color);
+    font-family: var(--font-family);
+    font-size: 1.2rem;
+    margin: 2vh 0;
+}
+
+#about-info div {
+    width: 15%;
+    /* height: 0; */
+    border-bottom: 1px solid var(--main-text-color);
+}
