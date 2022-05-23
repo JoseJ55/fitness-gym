@@ -1,0 +1,105 @@
+#about {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background-image: url("./../assets/risen-wang-20jX9b35r_M-unsplash.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#about-shapes {
+    position: relative;
+    top: 0;
+    overflow: hidden;
+    display: flex;
+    /* justify-content: center;
+    align-items: center; */
+    height: inherit;
+}
+
+.squares {
+    flex: 1;
+    height: 50em;
+}
+
+.triangle-bottom-right {
+    background-color: transparent;
+    border-top: 25em solid transparent;
+    border-left: 25em solid transparent;
+    border-bottom: 25em solid var(--shape-background);
+    border-right: 25em solid var(--shape-background);
+    width: 0;
+    height: 0;
+}
+
+#about-shapes-box1 {
+    background-color: transparent;
+}
+
+#about-shapes-box2 {
+    background-color: var(--shape-background);
+}
+
+
+#about-info {
+    width: 30%;
+    position: absolute;
+    top: 50%;
+    right: 10%;
+}
+
+#about-info p {
+    color: var(--main-text-color);
+    font-family: var(--font-family);
+    font-size: 1.2rem;
+    margin: 2vh 0;
+}
+
+#about-info div {
+    width: 15%;
+    border-bottom: 1px solid var(--main-text-color);
+}
+
+#test-triangle {
+    position: absolute;
+    right: 0;
+    top: -40%;
+    background-color: transparent;
+    border-top: 80vh solid transparent;
+    border-left: 40vw solid transparent;
+    border-bottom: 80vh solid var(--shape-background);
+    border-right: 40vw solid var(--shape-background);
+    width: 0;
+    height: 0;
+}
+
+@media screen and (min-width: 2000px) {
+
+}
+
+@media screen and (max-width: 2000px) {
+    
+}
+
+@media screen and (max-width: 1440px) {
+
+}
+
+@media screen and (max-width: 1000px) {
+    #about-info p {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    #about-info p {
+        font-size: .9rem;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    #about-info p {
+        font-size: .8rem;
+    }
+}
