@@ -1,0 +1,106 @@
+#products {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background-image: url("./../assets/images/ctrl-a-meal-replacement-03e4RajfFAE-unsplash.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#products-shapes {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    /* top: 0; */
+    /* display: flex; */
+    overflow: hidden;
+}
+
+#products-triangle-top-left {
+    width: 0;
+    height: 0;
+    border-top: 40vh solid var(--shape-background);
+    border-right: 20vw solid transparent;
+    border-bottom: 40vh solid transparent;
+    border-left: 20vw solid var(--shape-background);
+}
+
+#products-shapes-right-triangle {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 0;
+    height: 0;
+    border-top: 50vh solid transparent;
+    border-right: 25vw solid var(--shape-background);
+    border-bottom: 50vh solid var(--shape-background);
+    border-left: 25vw solid transparent;
+}
+
+#products-rectangle {
+    width: 100%;
+    height: 20em;
+    background-color: var(--shape-background);
+}
+
+#products-info {
+    position: absolute;
+    bottom: 15%;
+    right: 5%;
+    width: 20%;
+}
+
+#products-info p {
+    color: var(--main-text-color);
+    font-size: 1.2rem;
+    font-family: var(--font-family);
+    margin: 3vh 0;
+}
+
+#products-info input {
+    position: absolute;
+    right: 0;
+}
+
+@media screen and (min-width: 2000px) {
+
+}
+
+@media screen and (max-width: 2000px) {
+    
+}
+
+@media screen and (max-width: 1440px) {
+
+}
+
+@media screen and (max-width: 1000px) {
+    #products-info{
+        width: 25%;
+    }
+    #products-info p {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    #products-info{
+        width: 30%;
+        bottom: 10%;
+    }
+    #products-info p {
+        font-size: .9rem;
+    }
+
+    #products-shapes-right-triangle {
+        border-top: 60vh solid transparent;
+        border-right: 30vw solid var(--shape-background);
+        border-bottom: 60vh solid var(--shape-background);
+        border-left: 30vw solid transparent;
+    }
+}
+
+@media screen and (max-width: 400px) {
+
+}

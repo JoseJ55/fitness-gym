@@ -1,0 +1,63 @@
+#main {
+    width: auto;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background-image: url("./../assets/images/daniel-apodaca-WdoQio6HPVA-unsplash.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.main-text {
+    color: var(--main-text-color);
+    font-size: 4rem;
+    font-family: var(--font-family);
+    margin: 0 0 0 10vw;
+}
+
+.main-small {
+    color: white;
+    font-size: 2rem;
+    font-family: var(--font-family);
+    margin: 0 0 0 10vw;
+}
+
+@media screen and (min-width: 2000px) {
+
+}
+
+@media screen and (max-width: 2000px) {
+    
+}
+
+@media screen and (max-width: 1440px) {
+    .main-text{
+        font-size: 3.5rem;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+
+}
+
+@media screen and (max-width: 500px) {
+    .main-text {
+        font-size: 2.5rem;
+    }
+    .main-small {
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .main-text {
+        font-size: 2rem;
+    }
+    .main-small {
+        font-size: 1.3rem;
+    }
+}

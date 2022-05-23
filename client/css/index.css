@@ -32,7 +32,7 @@ body {
 
 /* ----------------------------------------------------------------- */
 
-#nav {
+/* #nav {
     background-color: black;
     width: 80%;
     padding: 0 10%;
@@ -104,11 +104,11 @@ body {
 #nav-items-about-title-items:hover #nav-items-about {
     background-color: black;
     color: var(--main-text-color);
-}
+} */
 
 /* ------------------------------------------------------------ */
 
-#main {
+/* #main {
     width: auto;
     height: 100vh;
     display: flex;
@@ -134,11 +134,11 @@ body {
     font-size: 2rem;
     font-family: var(--font-family);
     margin: 0 0 0 10vw;
-}
+} */
 
 /* --------------------------------------------------------------------- */
 
-#about {
+/* #about {
     width: 100%;
     height: 100vh;
     position: relative;
@@ -181,9 +181,6 @@ body {
     background-color: var(--shape-background);
 }
 
-#about-shapes-triangle {
-    /* background-color: black; */
-}
 
 #about-info {
     width: 30%;
@@ -201,13 +198,12 @@ body {
 
 #about-info div {
     width: 15%;
-    /* height: 0; */
     border-bottom: 1px solid var(--main-text-color);
-}
+} */
 
 /* ------------------------------------------------------------------- */
 
-#products {
+/* #products {
     width: 100%;
     height: 100vh;
     position: relative;
@@ -260,6 +256,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
+    overflow: hidden;
 }
 
 #products-shapes-right-area {
@@ -267,21 +264,16 @@ body {
 }
 
 #products-triangle-bottom-right-two {
-    align-self: flex-start;
+    align-self: flex-end;
     width: 0;
     height: 0;
-    border-top: 30vh solid transparent;
-    border-right: 15em solid var(--shape-background);
-    border-bottom: 30vh solid var(--shape-background);
-    border-left: 15em solid transparent;
+    border-top: 25vh solid transparent;
+    border-right: 17.5vw solid var(--shape-background);
+    border-bottom: 25vh solid var(--shape-background);
+    border-left: 17vw solid transparent;
 }
 
-#products-vertical-rectangle {
-    flex: 1;
-    width: 2em;
-    height: 60vh;
-    background-color: var(--shape-background);
-}
+
 
 #products-rectangle {
     width: 100%;
@@ -291,7 +283,7 @@ body {
 
 #products-info {
     position: absolute;
-    bottom: 25%;
+    bottom: 15%;
     right: 10%;
     width: 20%;
 }
@@ -306,11 +298,11 @@ body {
 #products-info input {
     position: absolute;
     right: 0;
-}
+} */
 
 /* ------------------------------------------------------------ */
 
-#trainers {
+/* #trainers {
     width: 100%;
     height: 100vh;
     position: relative;
@@ -356,11 +348,11 @@ body {
 #trainers-info-contain input {
     position: absolute;
     right: 0;
-}
+} */
 
 /* -------------------------------------------------------- */
 
-footer {
+/* footer {
     width: 100%;
     padding: 15vh 0;
     display: flex;
@@ -482,5 +474,10 @@ footer {
     padding: 1vh 1vw;
     width: 20%;
     font-size: .9rem;
-}
+} */
 
+/* ------------------------------------------------- */
+
+@media screen and (min-width: 2000px) {
+    
+}

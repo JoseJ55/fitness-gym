@@ -5,7 +5,14 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta http-equiv="X-UA-Compatible" content="ie=edge" />
         <link rel="stylesheet" href="./css/index.css" />
+        <link rel="stylesheet" href="./css/Home-nav.css" />
+        <link rel="stylesheet" href="./css/Home-header.css" />
+        <link rel="stylesheet" href="./css/Home-about.css" />
+        <link rel="stylesheet" href="./css/Home-products.css" />
+        <link rel="stylesheet" href="./css/Home-trainers.css" />
+        <link rel="stylesheet" href="./css/Footer.css" />
         <title>fitness-gym</title>
+        <script src="https://kit.fontawesome.com/66d7df6df2.js" crossorigin="anonymous"></script>
     </head>
     <body>
         <div id="nav">
@@ -26,6 +33,22 @@
                 <li class="nav-items-about-title">Profile</li>
             </ul>
         </div>
+        <div id="nav-colapse">
+            <div id="nav-colapse-top">
+                <a href="/" id="nav-colapse-top-icon"><p>Gym</p></a>
+                <button id="nav-colapse-top-btn">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+
+            <ul id="nav-colapse-dropdown">
+                <li>About</li>
+                <li>Trainers</li>
+                <li>Shop</li>
+                <li>Cart</li>
+                <li>Profile</li>
+            </ul>
+        </div>
 
         <div id="main">
             <h1 class="main-text">Achive Your</h1>
@@ -35,9 +58,10 @@
 
         <div id="about">
             <div id="about-shapes">
-                <div class="squares" id="about-shapes-box1"></div>
+                <!-- <div class="squares" id="about-shapes-box1"></div>
                 <div class="triangle-bottom-right" id="about-shapes-triangle"></div>
-                <div class="squares" id="about-shapes-box2"></div>
+                <div class="squares" id="about-shapes-box2"></div> -->
+                <div id="test-triangle"></div>
             </div>
             <div id="about-info">
                 <p>Joins us to achive your dream body and pyshical goals. With
@@ -50,17 +74,8 @@
 
         <div id="products">
             <div id="products-shapes">
-                <div id="products-shapes-left">
-                    <div id="products-triangle-top-left"></div>
-                    <div id="products-triangle-bottom-right-one"></div>
-                </div>
-                <div id="products-shapes-right">
-                    <div id="products-shapes-right-area">
-                        <div id="products-triangle-bottom-right-two"></div>
-                        <div id="products-vertical-rectangle"></div>
-                    </div>
-                    <div id="products-rectangle"></div>
-                </div>
+                <div id="products-triangle-top-left"></div>
+                <div id="products-shapes-right-triangle"></div>
             </div>
 
             <div id="products-info">
@@ -96,9 +111,9 @@
                     <p>State Country</p>
                 </div>
                 <div id="footer-contact-links">
-                    <p>Twitter</p>
-                    <p>facebook</p>
-                    <p>instagram</p>
+                    <p id="footer-contact-links-twitter"><i class="fa-brands fa-twitter"></i></p>
+                    <p id="footer-contact-links-facebook"><i class="fa-brands fa-facebook"></i></p>
+                    <p id="footer-contact-links-insta"><i class="fa-brands fa-instagram"></i></p>
                 </div>
             </div>
 
@@ -120,5 +135,7 @@
                 </div>
             </div>
         </footer>
+
+        <script src="./js/Home.js"></script>
     </body>
 </html>
