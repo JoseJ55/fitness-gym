@@ -7,8 +7,8 @@ const shop = require("./shop");
 const trainers = require("./trainers");
 
 router.use("/", home);
-// router.use("/trainers", trainers);
-// router.use("/shop", shop);
+router.use("/trainers", trainers);
+router.use("/shop", shop);
 // router.use("/cart", cart);
 // router.use("/profile", profile);
 

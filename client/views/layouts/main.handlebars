@@ -11,6 +11,7 @@
         <link rel="stylesheet" href="./css/Home-products.css" />
         <link rel="stylesheet" href="./css/Home-trainers.css" />
         <link rel="stylesheet" href="./css/Footer.css" />
+        <link rel="stylesheet" href="./css/Trainers.css" />
         <title>fitness-gym</title>
         <script src="https://kit.fontawesome.com/66d7df6df2.js" crossorigin="anonymous"></script>
     </head>
@@ -20,17 +21,17 @@
 
             <ul id="nav-items">
                 <div id="nav-items-about">
-                    <li class="nav-items-about-title">About</li>
+                    <li class="nav-items-about-title" id="aboutLink">About</li>
                     <ul id="nav-items-about-title-items">
-                        <a href="#about"><li>Info</li></a>
-                        <a href="#products"><li>Products</li></a>
-                        <a href="#trainers"><li>Trainers</li></a>
+                        <li id="infoDropNav">Info</li>
+                        <li id="productsDropNav">Products</li>
+                        <li id="trainersDropNav">Trainers</li>
                     </ul>
                 </div>
-                <li class="nav-items-about-title">Trainers</li>
-                <li class="nav-items-about-title">Shop</li>
-                <li class="nav-items-about-title">Cart</li>
-                <li class="nav-items-about-title">Profile</li>
+                <li class="nav-items-about-title" id="trainersLink">Trainers</li>
+                <li class="nav-items-about-title" id="shopLink">Shop</li>
+                {{!-- <li class="nav-items-about-title" id="cartLink">Cart</li>
+                <li class="nav-items-about-title" id="profileLink">Profile</li> --}}
             </ul>
         </div>
         <div id="nav-colapse">
@@ -51,7 +52,44 @@
         </div>
 
         {{{body}}}
-        
+
+        <footer>
+            <div id="footer-contact">
+                <h2>GYM</h2>
+                <div id="footer-contact-info">
+                    <p>email@gmail.com</p>
+                    <p>123-456-7890</p>
+                </div>
+                <div id="footer-contact-address">
+                    <p>123 street City,</p>
+                    <p>State Country</p>
+                </div>
+                <div id="footer-contact-links">
+                    <p id="footer-contact-links-twitter"><i class="fa-brands fa-twitter"></i></p>
+                    <p id="footer-contact-links-facebook"><i class="fa-brands fa-facebook"></i></p>
+                    <p id="footer-contact-links-insta"><i class="fa-brands fa-instagram"></i></p>
+                </div>
+            </div>
+
+            <div id="footer-nav">
+                <p>Home</p>
+                <p>Trainers</p>
+                <p>Shop</p>
+                <p>Cart</p>
+                <p>Account</p>
+            </div>
+
+            <div id="footer-email">
+                <h2>Newsletter sign-up</h2>
+                <div id="footer-email-inputs">
+                    <p>Sign-up to our newsletter and get the newest information.</p>
+                    <input type="text" placeholder="Email Address" id="footer-email-inputs-text" />
+                    <input type="button" value="Submit"
+                    id="footer-email-inputs-btn" class="smallBtn" />
+                </div>
+            </div>
+        </footer>
+
         <script src="./js/Nav.js"></script>
     </body>
 </html>

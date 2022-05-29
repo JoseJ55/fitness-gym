@@ -1,0 +1,111 @@
+#trainers-page {
+    /* display: flex; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    /* flex-direction: column; */
+    width: 90%;
+    padding: 15vh 5%;
+    position: relative;
+}
+
+#trainers-page-head {
+    height: 100%;
+    position: absolute;
+    left: 5;
+    right: 20;
+    overflow-x: hidden;
+    overflow-y: auto;
+    perspective: 20px;
+}
+
+#trainers-page-head ol {
+    height: 95%;
+    transform-style: preserve-3d;
+    /* list-style-type: none; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+#trainers-page-head ol li {
+    color: var(--main-text-color);
+    font-family: var(--font-family);
+    font-size: 3rem;
+    font-weight: bold;
+    /* margin: 5vh 0; */
+}
+
+.instructor {
+    background-color: rgba(255, 255, 255, 0.8);
+    width: 75%;
+    margin: 10vh auto 10vh auto;
+    /* padding: 4vh 3vw; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid var(--main-text-color)
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex: 1;
+    padding: 4vh 3vw;
+}
+
+.instructor-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.instructor-title h2 {
+    font-family: var(--font-family);
+    font-size: 1.5rem;
+    margin-right: 2vw;
+}
+
+.instructor-title p {
+    font-family: var(--font-family);
+    font-size: 1.2rem;
+}
+
+.info-desc {
+    width: 80%;
+    font-family: var(--font-family);
+    font-size: 1rem;
+    margin: 3vh 0;
+}
+
+.ratings {
+    display: flex;
+    align-items: flex-start;
+}
+
+.ratings p {
+    font-family: var(--font-family);
+    font-size: 1rem;
+    margin-right: 2vw;
+}
+
+.instructor-image {
+    flex: .8;
+    height: 35vh;
+    border: 2px solid var(--main-text-color);
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.instructor-image img {
+    min-width: 100%;
+    min-height: 100%;
+    border-radius: 10px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    object-fit: cover;
+}
