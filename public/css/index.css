@@ -1,0 +1,32 @@
+:root {
+    --main-text-color: rgb(255, 255, 101);
+    --font-family: Verdana, Geneva, Tahoma, sans-serif;
+    --shape-background: rgba(0, 0, 0, 0.9);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: black;
+}
+
+/* -------------------------------------------------------------- */
+
+.smallBtn {
+    background-color: var(--main-text-color); 
+    font-size: 1rem;
+    font-family: var(--font-family);
+    padding: 1vh 1vw;
+    border: 1px solid transparent;
+}
+
+.smallBtn:hover {
+    background-color: black;
+    border: 1px solid var(--main-text-color);
+    color: var(--main-text-color);
+    cursor: pointer;
+}
+
