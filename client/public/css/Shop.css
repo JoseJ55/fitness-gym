@@ -1,0 +1,147 @@
+#shop {
+    padding-top: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    position: relative;
+}
+
+#shop-backgroundShape {
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-top: 60vh solid var(--main-text-color);
+    border-right: 40vW solid transparent;
+    border-bottom: 60vh solid transparent;
+    border-left: 40vw solid var(--main-text-color);
+    z-index: -100;
+    opacity: .3;
+}
+
+#shop-title {
+    font-family: var(--font-family);
+    font-size: 1.5rem;
+    color: var(--main-text-color);
+    width: 80%;
+    margin-bottom: 10vh;
+}
+
+#shop-products {
+    width: 70%;
+    height: 100%;
+    padding: 0 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.shop-products-item {
+    width: 30%;
+    height: 40%;
+    overflow: hidden;
+    margin-bottom: 5vh;
+}
+
+.shop-products-item:hover {
+    cursor: pointer;
+}
+
+.shop-products-item-image{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+
+.shop-products-item-image img {
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    width: 100%;
+    max-height: 30vh;
+}
+
+.shop-products-item h2 {
+    padding: 1vh 2vw;
+    font-family: var(--font-family);
+    font-size: 1.1rem;
+    color: var(--main-text-color);
+}
+
+.shop-products-item p {
+    padding: 0 2vw;
+    font-family: var(--font-family);
+    font-size: 1rem;
+    color: var(--main-text-color);
+}
+
+@media screen and (min-width: 2000px) {
+    .shop-products-item {
+        width: 23%;
+        height: 35%;
+    }
+}
+
+@media screen and (max-width: 2000px) {
+    
+}
+
+@media screen and (max-width: 1440px) {
+
+}
+
+@media screen and (max-width: 1000px) {
+    #shop-title {
+        font-size: 1.2rem;
+        width: 50%;
+    }
+
+    #shop-products {
+        width: 74%;
+    }
+
+    .shop-products-item {
+        height: 20%;
+    }
+
+    .shop-products-item h2 {
+        font-size: 1rem;
+    }
+
+    .shop-products-item p{
+        font-size: .9rem;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    #shop-title {
+        font-size: 1rem;
+        width: 80%;
+    }
+
+    #shop-products {
+        width: 84%;
+    }
+
+    .shop-products-item {
+        width: 45%;
+        height: 20%;
+    }
+
+    .shop-products-item h2 {
+        font-size: .9rem;
+    }
+
+    .shop-products-item p{
+        font-size: .8rem;
+    }
+}
+
+@media screen and (max-width: 400px) {
+
+}
