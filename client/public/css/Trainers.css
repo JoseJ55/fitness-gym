@@ -16,6 +16,7 @@
     overflow-x: hidden;
     overflow-y: auto;
     perspective: 20px;
+    opacity: .7;
 }
 
 #trainers-page-head ol {
@@ -91,6 +92,7 @@
 
 .instructor-image {
     flex: .8;
+    width: 100%;
     height: 35vh;
     border: 2px solid var(--main-text-color);
     border-radius: 10px;
@@ -108,4 +110,68 @@
     background-repeat: no-repeat;
     background-position: center;
     object-fit: cover;
+}
+
+@media screen and (min-width: 2000px) {
+    
+}
+
+@media screen and (max-width: 2000px) {
+    
+}
+
+@media screen and (max-width: 1440px) {
+    .info {
+        padding: 2vh 2vw;
+    }
+
+    .instructor-title h2 {
+        font-size: 1.3rem;
+        margin-right: 1vw;
+    }
+    .instructor-title p{
+        font-size: 1rem;
+    }
+    .info-desc {
+        font-size: .9rem;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .info {
+        padding: 1vh 2vw;
+    }
+
+    .instructor-title h2 {
+        font-size: 1.2rem;
+        margin-right: .9vw;
+    }
+    .instructor-title p{
+        font-size: .9rem;
+    }
+    .info-desc {
+        font-size: .8rem;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    #trainers-page-head {
+        left: 1;
+    }
+    #trainers-page-head ol li {
+        font-size: 2rem;
+    }
+    .instructor {
+        flex-direction: column-reverse;
+    }
+    .instructor-image {
+        max-height: 30vh;
+    }
+    .info-desc {
+        width: 94%;
+    }
+}
+
+@media screen and (max-width: 400px) {
+
 }
