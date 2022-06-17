@@ -4,6 +4,8 @@ const shopNavBtn = document.getElementById("shopLink");
 // const cartNavBtn = document.getElementById("cartLink");
 // const profileNavBtn = document.getElementById("profileLink");
 
+const quickHover = document.getElementById("nav-items-about-title-items");
+
 const colAboutBtn = document.getElementById("colAboutLink");
 const colTrainerBtn = document.getElementById("colTrainersLink");
 const colShopBtn = document.getElementById("colShopLink");
@@ -19,6 +21,13 @@ const trainersSection = document.getElementById("trainers");
 
 const modileDrop = document.getElementById("nav-colapse-top-btn");
 const dropItems = document.getElementById("nav-colapse-dropdown");
+
+window.addEventListener("load", () => {
+    console.log(window.location.pathname)
+    if(window.location.pathname != "/") {
+        quickHover.style.display = "none";
+    }
+})
 
 aboutQuickLink.addEventListener("click", (e) => {
     e.preventDefault();

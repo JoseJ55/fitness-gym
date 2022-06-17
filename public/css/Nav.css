@@ -41,10 +41,12 @@
 }
 
 #nav-items-about-title-items {
+    width: fit-content;
     position: absolute;
     display: none;
     background-color: black;
     padding: 1vh 1vw;
+    margin: 0;
     color: var(--main-text-color);
     list-style-type: none;
 }
@@ -56,6 +58,7 @@
 
 #nav-items-about-title-items li {
     padding: 2vh 4vw;
+    margin: 0;
 }
 
 #nav-items-about-title-items li:hover {
@@ -150,9 +153,9 @@
     #nav-items {
         font-size: 1.2rem;
     }
-    #nav-items li {
+    /* #nav-items li {
         margin-right: 5vw;
-    }
+    } */
 }
 
 @media screen and (max-width: 500px) {
