@@ -10,7 +10,10 @@
 }
 
 body {
+    margin: 0;
     background-color: black;
+    overflow-x: hidden;
+    max-width: 100%;
 }
 
 /* -------------------------------------------------------------- */
@@ -30,3 +33,35 @@ body {
     cursor: pointer;
 }
 
+/* ---------------animations---------------------- */
+
+/* Fade in animations */
+.fade-in-animate {
+    opacity: 0;
+    transition: opacity 1s ease-in;
+    transition-delay: 1s;
+}
+
+.fade-in-animate.appear {
+    opacity: 1;
+}
+
+/* Slide in animations */
+.slide-in-right-animate {
+    opacity: 0;
+    transform: translateX(50%);
+}
+
+.slide-in-left-animate {
+    opacity: 0;
+    transform: translateX(-50%);
+}
+
+.slide-in-right-animate, .slide-in-left-animate {
+    transition: transform 1s ease-in, opacity 1s ease-in;
+}
+
+.slide-in-right-animate.appear, .slide-in-left-animate.appear {
+    opacity: 1;
+    transform: translateX(0);
+}
