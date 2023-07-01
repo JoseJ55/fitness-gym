@@ -48,7 +48,6 @@
 }
 
 #plan-one-background {
-    /* background-color: rgb(105, 203, 170);; */
     background-color: rgb(95, 184, 154);
 }
 #plan-one-background:hover {
@@ -148,3 +147,13 @@
     margin-bottom: 5%;
 }
 
+@keyframes fadeIn {
+    0% {
+        transform: translateY(100%);
+        opacity: 0; 
+    }
+    100% { 
+        transform: translateY(0%);
+        opacity: 1; 
+    }
+}

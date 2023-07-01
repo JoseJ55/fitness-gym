@@ -23,28 +23,34 @@ function changeBackground() {
 
 // setInterval(changeBackground, 5000);
 
+const plansBox = document.getElementById('membership-plans');
 const firstPlan = document.getElementById('plan-one-background');
 const secondPlan = document.getElementById('plan-two-background');
 const thirdPlan = document.getElementById('plan-three-background');
 
-function slideUp(element) {
-  var height = element.offsetHeight;
+function isInViewport(item) {
 
-  element.style.position = 'relative';
-  element.style.top = '0';
+  var bounding = item.getBoundingClientRect(),
+      myElementHeight = item.offsetHeight,
+      myElementWidth = item.offsetWidth;
 
-  var animation = setInterval(frame, 10);
-
-  function frame() {
-    height -= 10;
-
-    if (height <= 0) {
-      clearInterval(animation);
-      element.style.display = 'none';
-    } else {
-      element.style.top = -height + 'px';
-    }
+  if(bounding.top >= -myElementHeight
+      && bounding.left >= -myElementWidth
+      && bounding.right <= (window.innerWidth || document.documentElement.clientWidth) + myElementWidth
+      && bounding.bottom <= (window.innerHeight || document.documentElement.clientHeight) + myElementHeight) {
+      return true;
+  } else {
+      return false;
   }
+
 }
 
-// slideUp(firstPlan);
+// var height = plansBox.offsetHeight;
+
+window.addEventListener('scroll', () => {
+  if (isInViewport(plansBox)) {
+    firstPlan.style.animation = 'fadeIn 2s';
+    secondPlan.style.animation = 'fadeIn 3s';
+    thirdPlan.style.animation = 'fadeIn 3.5s';
+  }
+})
