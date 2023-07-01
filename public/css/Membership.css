@@ -1,0 +1,150 @@
+#membership-header {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+#image-container {
+    width: 100%;
+    height: 100vh;;
+    background-image: url("./../assets/membership/bruce-mars-y0SMHt74yqc-unsplash.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 2;
+    position: absolute;
+}
+
+#membership-header-shade {
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    opacity: .5;
+    z-index: 3;
+    position: absolute;
+}
+
+#membership-header-text-hold {
+    top: 60%;
+    left: 35%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    z-index: 4;
+}
+
+.membership-header-text {
+    color: var(--main-text-color);
+    font-family: var(--font-family);
+    font-size: 1.5rem;
+    margin-bottom: 1vh;
+}
+
+#membership-plans {
+    width: 100%;
+    min-height: 150vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#plan-one-background {
+    /* background-color: rgb(105, 203, 170);; */
+    background-color: rgb(95, 184, 154);
+}
+#plan-one-background:hover {
+    background-color: rgb(111, 196, 167);
+}
+#plan-two-background {
+    background-color: rgb(95, 176, 198);
+}
+#plan-two-background:hover {
+    background-color: rgb(104, 186, 209);
+}
+#plan-three-background {
+    background-color: rgb(184, 94, 101);
+}
+#plan-three-background:hover {
+    background-color: rgb(199, 99, 108);
+}
+
+#plan-one-title {
+    color: rgb(95, 184, 154);
+}
+#plan-two-title {
+    color: rgb(95, 176, 198);
+}
+#plan-three-title {
+    color: rgb(184, 94, 101);
+}
+
+.membership-plan {
+    /* background-color: rgb(105, 203, 170); */
+    /* padding: 5vh 3vw; */
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0 1vw;
+    /* overflow: hidden; */
+    position: relative;
+    padding: 7vh 0;
+    max-width: 20%;
+    min-width: 20%;
+    min-height: 50vh;
+    max-height: 50vh;
+}
+
+.membership-plan:hover {
+    cursor: pointer;
+}
+
+.membership-plan-name {
+    padding: 10% 0;
+    align-self: center;
+    background-color: white;
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    left: 15%;
+    top: -10%;
+    border-radius: 10px;
+    /* color: rgb(105, 203, 170); */
+    font-family: var(--font-family);
+    font-size: 1.3rem;
+}
+
+.membership-plan-price {
+    padding: 0 5%;
+    width: 50%;
+    color: white;
+    font-family: var(--font-family);
+    font-size: 1rem;
+}
+
+.membership-plan-line {
+    width: 100%;
+    border-bottom: 1px white solid;
+    margin: 5% 0;
+}
+
+.membership-plan-desc {
+    width: 75%;
+    padding: 2vh 0;
+    color: white;
+    font-family: var(--font-family);
+    font-size: 0.8rem;
+}
+
+.membership-plan-items {
+    width: 60%;
+    color: white;
+    font-family: var(--font-family);
+    font-size: 0.8rem;
+}
+
+.membership-plan-items li {
+    margin-bottom: 5%;
+}
+

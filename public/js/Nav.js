@@ -1,6 +1,7 @@
 const aboutNavBtn = document.getElementById("aboutLink");
 const trainerNavBtn = document.getElementById("trainersLink");
 const shopNavBtn = document.getElementById("shopLink");
+const membershipNavBtn = document.getElementById("membershipLink");
 // const cartNavBtn = document.getElementById("cartLink");
 // const profileNavBtn = document.getElementById("profileLink");
 
@@ -74,6 +75,10 @@ colTrainerBtn.addEventListener("touchend", (e) => {
 
 shopNavBtn.addEventListener("click", () => {
     window.location.href = "/shop";
+})
+
+membershipNavBtn.addEventListener("click", () => {
+    window.location.href = "/membership";
 })
 
 colShopBtn.addEventListener("touchend", (e) => {
