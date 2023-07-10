@@ -10,6 +10,7 @@ const quickHover = document.getElementById("nav-items-about-title-items");
 const colAboutBtn = document.getElementById("colAboutLink");
 const colTrainerBtn = document.getElementById("colTrainersLink");
 const colShopBtn = document.getElementById("colShopLink");
+const colMemberBtn = document.getElementById("colMemberLink");
 
 const aboutQuickLink = document.getElementById("infoDropNav");
 const productsQuickLink = document.getElementById("productsDropNav");
@@ -80,6 +81,10 @@ shopNavBtn.addEventListener("click", () => {
 membershipNavBtn.addEventListener("click", () => {
     window.location.href = "/membership";
 })
+
+colMemberBtn.addEventListener("touchend", (e) => {
+    window.location.href = "/membership";
+}, false)
 
 colShopBtn.addEventListener("touchend", (e) => {
     window.location.href = "/shop";

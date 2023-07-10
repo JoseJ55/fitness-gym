@@ -54,3 +54,24 @@ window.addEventListener('scroll', () => {
     thirdPlan.style.animation = 'fadeIn 3.5s';
   }
 })
+
+const membershipPlan = document.getElementsByClassName('membership-plan');
+const membershipBox = document.getElementById('membership-form');
+const membershipFormBox = document.getElementById('membership-form-box');
+const membershipFormBackground = document.getElementById('membership-form-background');
+const membershipFormBoxCancel = document.getElementById('membership-form-box-cancel');
+
+Array.from(membershipPlan).forEach((plan) => {
+  plan.addEventListener('click', () => {
+    membershipBox.style.display = 'flex';
+    membershipFormBox.style.animation = 'fadeIn 2s';
+  })
+})
+
+membershipFormBackground.addEventListener('click', () => {
+  membershipBox.style.display = 'none';
+})
+
+membershipFormBoxCancel.addEventListener('click', () => {
+  membershipBox.style.display = 'none';
+})
