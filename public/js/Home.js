@@ -58,3 +58,28 @@ bottomSliders.forEach(slider => {
 navBtn.addEventListener("click", showNav)
 trainerInfoLink.addEventListener("click", goToTrainers)
 productsInfoLink.addEventListener("click", goToShop)
+
+
+// This is for the header main text 
+document.addEventListener('DOMContentLoaded', () => {
+    const mainContainer = document.getElementById('main-container');
+    
+    const textLetter = document.querySelectorAll(".main-letter");
+
+    let animationDuration = 0.5;
+    setTimeout(() => {
+        textLetter.forEach((letter) => {
+            letter.style.animation = `fadeUp ${animationDuration}s forwards`;
+    
+            animationDuration += 0.5;
+        })
+    }, 500)
+
+})
+
+// Custom Button logic
+
+
+const customButton = document.getElementById("shopButton");
+
+customButton.addEventListener("click", goToShop)

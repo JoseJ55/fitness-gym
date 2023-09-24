@@ -27,6 +27,74 @@
     margin: 0 0 0 10vw;
 }
 
+#main-container {
+    display: flex;
+    width: fit-content;
+    height: auto;
+}
+
+.main-letter {
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    bottom: -100%;
+    overflow: hidden;
+    opacity: 0;
+}
+
+.customButton {
+    background-color: var(--main-text-color);
+    border: 2px solid var(--main-text-color);
+    width: fit-content;
+    min-width: 60px;
+    max-width: 80px;
+    height: auto;
+    min-height: 25px;
+    max-height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 0;
+    transition: background-color 1s ease;
+}
+
+.customButton:hover {
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.customText {
+    color: black !important;
+    font-size: 1rem !important;
+    transition: color 1s ease;
+}
+
+.customButton:hover .customText {
+    color: var(--main-text-color) !important;
+}
+
+@keyframes fadeUp {
+    0% {
+        bottom: -100%;
+        opacity: 0;
+    }
+    100% {
+        bottom: 0%;
+        opacity: 1;
+    }
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
 @media screen and (min-width: 2000px) {
 
 }
