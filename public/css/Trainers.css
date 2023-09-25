@@ -42,10 +42,7 @@
     max-width: 650px;
     max-height: 400px;
     margin: 10vh auto 10vh auto;
-    /* padding: 4vh 3vw; */
     display: flex;
-    /* justify-content: center;
-    align-items: center; */
     border: 2px solid var(--main-text-color);
     position: relative;
 }
@@ -53,11 +50,6 @@
 .instructor:hover {
     cursor: pointer;
 }
-
-/* #trainers-instructor {
-    background-color: red;
-    width: 60%;
-} */
 
 .instructor-freeClass {
     z-index: 1;
@@ -149,6 +141,15 @@
     background-repeat: no-repeat;
     background-position: center;
     object-fit: cover;
+}
+
+@keyframes slide-up {
+    0% {
+        bottom: -100%;
+    }
+    100% {
+        bottom: 0%;
+    }
 }
 
 @keyframes sizeIncreaseRight {
